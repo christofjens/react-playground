@@ -1,12 +1,18 @@
 import * as React from 'react'
-import Pagination from './Pagination'
+import Card from './Card'
 
-export default children => {
+export default () => {
   return (
     <div>
-      <Pagination isInactive>&larr;</Pagination>
-      <p>1/12</p>
-      <Pagination>&rarr;</Pagination>
+      <Card
+        headline="This is a Headline"
+        isBookmarkActive
+        text="Featuring an active Bookmark. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi alias incidunt asperiores."
+      ></Card>
+      <Card
+        headline="A second headline"
+        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi alias incidunt asperiores."
+      ></Card>
     </div>
   )
 }
