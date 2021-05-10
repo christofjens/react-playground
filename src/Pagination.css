@@ -1,0 +1,16 @@
+.Pagination {
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+  margin: 10px;
+  background-color: grey;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+}
+
+.Pagination.inactive {
+  color: lightgrey;
+  font-weight: 300;
+}
