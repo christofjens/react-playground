@@ -1,11 +1,12 @@
 import * as React from 'react'
-import Button from './Button'
+import Pagination from './Pagination'
 
 export default children => {
   return (
     <div>
-      <Button isActive>Active</Button>
-      <Button>Not Active</Button>
+      <Pagination isInactive>&larr;</Pagination>
+      <p>1/12</p>
+      <Pagination>&rarr;</Pagination>
     </div>
   )
 }
