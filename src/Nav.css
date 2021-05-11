@@ -1,0 +1,30 @@
+.Nav__section {
+  margin: 0 0 40px 0;
+}
+
+.Nav__button {
+  margin: 0;
+  width: 100px;
+  height: 70px;
+  padding: 20px;
+  background-color: lightsteelblue;
+  border: steelblue 1px solid;
+  font-family: monospace;
+  font-weight: 700;
+  color: darkste;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Nav__button--left {
+  border-radius: 7px 0 0 7px;
+  border-right: none;
+}
+
+.Nav__button--right {
+  border-radius: 0 7px 7px 0;
+  border-left: none;
+}
+
+.Nav__button--active {
+  background-color: hotpink;
+}
