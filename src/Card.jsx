@@ -7,6 +7,7 @@ export default function Card({
   answer,
   isBookmarked,
   isAnswerVisible,
+  tags,
 }) {
   return (
     <section className="Card">
@@ -21,6 +22,11 @@ export default function Card({
       <p className={isAnswerVisible ? 'Card__answer' : 'Card__answer visible'}>
         {answer}
       </p>
+      <ul className="Card__tags">
+        {tags.map(tag => (
+          <li key={tag}>{tag}</li>
+        ))}
+      </ul>
     </section>
   )
 }

@@ -4,10 +4,11 @@ import Card from './Card'
 const cards = [
   {
     question:
-      'Which famous 90&#039;s rap album is commonly referred to as &quot;The Bible of Hip Hop&quot;?',
+      'Which famous 90\'s rap album is commonly referred to as "The Bible of Hip Hop"?',
     answer: 'Illmatic',
     isBookmarked: false,
     isAnswerVisible: false,
+    tags: ['Tag1', 'Tag2', 'Tag3', 'Tag4'],
     id: 1,
   },
   {
@@ -15,22 +16,24 @@ const cards = [
     answer: 'Atlanta Braves',
     isBookmarked: true,
     isAnswerVisible: false,
+    tags: ['TagA', 'TagB', 'TagC', 'TagD'],
     id: 2,
   },
   {
-    question:
-      'In flight systems, what does the initialism &quot;TCAS&quot; stand for?',
+    question: 'In flight systems, what does the initialism "TCAS" stand for?',
     answer: 'Traffic Collision Avoidance System',
     isBookmarked: true,
     isAnswerVisible: false,
+    tags: ['Tag1a', 'Tag2b', 'Tag3c', 'Tag4d', 'Tag4e'],
     id: 3,
   },
   {
     question:
-      'In ancient Greece, if your job were a &quot;hippeus&quot; which of these would you own?',
+      'In ancient Greece, if your job were a "hippeus" which of these would you own?',
     answer: 'Horse',
     isBookmarked: false,
     isAnswerVisible: true,
+    tags: ['TagOne', 'TagTwo', 'TagThree', 'TagFour'],
     id: 4,
   },
   {
@@ -38,6 +41,7 @@ const cards = [
     answer: 'Natural History Museum',
     isBookmarked: false,
     isAnswerVisible: true,
+    tags: ['Tagtag', 'Tagtagtag', 'Tag', 'Tagtagtagtag'],
     id: 5,
   },
 ]
@@ -45,15 +49,18 @@ const cards = [
 export default () => {
   return (
     <div className="App">
-      {cards.map(({ id, question, answer, isBookmarked, isAnswerVisible }) => (
-        <Card
-          key={id}
-          question={question}
-          answer={answer}
-          isBookmarked={isBookmarked}
-          isAnswerVisible={isAnswerVisible}
-        />
-      ))}
+      {cards.map(
+        ({ id, question, answer, isBookmarked, isAnswerVisible, tags }) => (
+          <Card
+            key={id}
+            question={question}
+            answer={answer}
+            isBookmarked={isBookmarked}
+            isAnswerVisible={isAnswerVisible}
+            tags={tags}
+          />
+        )
+      )}
     </div>
   )
 }
