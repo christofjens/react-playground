@@ -9,23 +9,23 @@
   position: relative;
 }
 
-.bookmark {
+.Card__bookmark {
   position: absolute;
   top: -8px;
   right: 40px;
   width: 25px;
   height: 40px;
   background-color: lightgrey;
-  border: none;
+  border: 0.5px #999 solid;
   border-radius: 5px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.bookmark.active {
+.Card__bookmark.active {
   position: absolute;
   top: -5px;
   right: 40px;
   width: 25px;
   height: 40px;
   background-color: hotpink;
-  border: none;
 }
