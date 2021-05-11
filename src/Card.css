@@ -1,6 +1,5 @@
 .Card {
   width: 250px;
-  height: 150px;
   padding: 20px;
   margin: 20px;
   background-color: lightsteelblue;
@@ -28,4 +27,20 @@
   width: 25px;
   height: 40px;
   background-color: hotpink;
+}
+
+.Card__button {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #999;
+  border-radius: 7px;
+}
+
+.Card__answer {
+  display: none;
+}
+
+.Card__answer.visible {
+  display: block;
 }
